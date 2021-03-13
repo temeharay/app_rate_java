@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.brki</groupId>
-    <artifactId>rate</artifactId>
+    <artifactId>app_rate_java</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>rate</name>
+    <name>app_rate_java</name>
     <description>java rate</description>
     <properties>
         <java.version>15</java.version>

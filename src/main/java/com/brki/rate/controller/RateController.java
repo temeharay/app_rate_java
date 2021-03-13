@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class RateController {
-    @Value("${app.name:default}")
+    @Value("${app.name:rate java}")
     private String appName;
     @Value("${magic-word:default env} - aprika daprika booooo!")
     private String mw;
