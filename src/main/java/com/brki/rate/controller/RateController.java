@@ -8,8 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class RateController {
     @Value("${app.name:rate java}")
     private String appName;
-    @Value("${magic-word:default env} - aprika daprika booooo!")
-    private String mw;
+    @Value("${env_name:default env} - aprika daprika booooo!")
+    private String env_name_magic_word;
+
+    @GetMapping("/")
+    public String test() {
+        return "app working fine!";
+    }
 
     @GetMapping("/appname")
     public String getRate() {
@@ -18,6 +23,6 @@ public class RateController {
 
     @GetMapping("/magicword")
     public String getMagicWord() {
-        return "magic word is : " + mw;
+        return "magic word is : " + env_name_magic_word;
     }
 }

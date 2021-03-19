@@ -10,7 +10,8 @@
     </parent>
     <groupId>com.brki</groupId>
     <artifactId>app_rate_java</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
+    <packaging>jar</packaging>
     <name>app_rate_java</name>
     <description>java rate</description>
     <properties>
@@ -33,6 +34,7 @@
     </dependencies>
 
     <build>
+        <finalName>app_rate_java</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
